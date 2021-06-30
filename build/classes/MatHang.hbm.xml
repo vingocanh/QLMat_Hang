@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="Models.MatHang" table="mat_hang">
+        <meta attribute="class-description">         
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
+        <property name="tenMH" column="tenMH" type="string" />
+        <property name="moTa" column="moTa" type="string" />
+        <property name="chatLieu" column="chatLieu" type="string" />
+        <property name="noiSX" column="noiSX" type="string" />
+        <property name="hangSX" column="hangSX" type="string" />
+        <property name="ngaySX" column="ngaySX" type="date" />
+    </class>
+</hibernate-mapping>
